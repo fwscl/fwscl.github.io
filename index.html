@@ -25,15 +25,15 @@
                 -->
                 <div></div>
                 <div></div>
-                <div class="flex">
-                    <ul class="flex">
-                        <a href="#" class="mr-6 hover:text-indigo-300 text-white font-bold py-2 px-4">
+                <div class="hidden md:flex items-center space-x-1">
+                    <ul class="flex justify-between">
+                        <a href="#" class="hover:text-indigo-300 text-white font-bold py-2 px-4">
                             Home
                         </a>
-                            <a href="https://www.nukebot.org" target="_blank" class="mr-6 btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 px-4 rounded">
+                            <a href="https://www.nukebot.org" target="_blank" class="btn mr-3 bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 px-4 rounded">
                                 NukeBot Website
                             </a>
-                            <a href="https://invite.nukebot.org" target="_blank" class="mr-6 btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 px-4 rounded">
+                            <a href="https://invite.nukebot.org" target="_blank" class="btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 px-4 rounded">
                                 <span>Invite</span>
                             </a>
                     </ul>
@@ -43,42 +43,49 @@
         </div><!--end navbar-->
 
         <main class="bg-gray-800">
-            <!--<div>
-                <a href="#">Login</a>
-                <a href="#">Register</a>
-            </div>-->
 
             <header class="flex section-container justify-center py-8"><!--Website mainpage mit header-->
                 <div>
-                    <h2 class="font-bold text-6x1 sm:text-6xl text-center text-white py-4">NukeBot Shop</h2>
+                    <h2 class="font-bold text-4xl sm:text-6xl text-center text-white py-4">NukeBot Shop</h2>
                     <hr>
-                    <h3 class="text-4xl text-white py-4">Buy premium here</h3>
+                    <h3 class="text-2xl sm:text-4xl text-white py-4">Buy premium here</h3>
                 </div>
             </header>
 
-            <div class="flex items-center justify-between gap-2 py-16"><!--produktliste-->
-                <!--Eine Karte-->
-                <div></div>
-                    <div>
-                        <img src="img/nukebot.png" alt="premium" class="w-60">
-                        <p class="mr-6 text-white text-center font-bold text-3xl sm:text-3xl dark:text-white py-4">1 week Premium</p>
-                        <p class="mr-6 text-white text-center font-bold text-2xl sm:text-2xl dark:text-white">1€</p>
-                    </div>
-                    <div>
-                        <img src="img/nukebot.png" alt="premium" class="w-60">
-                        <p class="mr-6 text-white text-center font-bold text-3xl sm:text-3xl dark:text-white py-4">1 month Premium</p>
-                        <p class="mr-6 text-white text-center font-bold text-2xl sm:text-2xl dark:text-white">3€</p>
-                    </div>
-                    <div>
-                        <img src="img/nukebot.png" alt="premium" class="w-60">
-                        <p class="mr-6 text-white text-center font-bold text-3xl sm:text-3xl dark:text-white py-4">Lifetime Premium</p>
-                        <p class="mr-6 text-white text-center font-bold text-2xl sm:text-2xl dark:text-white">5€</p>
-                    </div>
-                    <div></div>
-            </div>
+            <section class="section bg-gray-900 dark:bg-gray-900 sm:px-6 md:px-8">
+                <!--produktliste-->
+                <div class="section-container flex gap-5 py-16 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 px-8 sm:px-12 lg:px-52">
+                    <!--Eine Karte-->
+                            <div class="card mx-auto bg-gray-800 rounded-xl border-4 border-gray-600 max-w-sm">
+                                <img src="img/nukebot.png" alt="premium" class="w-50 rounded-lg">
+                                <p class="text-white text-center font-bold text-3xl sm:text-3xl dark:text-white pt-4">1 week Premium</p>
+                                <p class="text-white text-center font-bold text-2xl sm:text-2xl dark:text-white pb-2">1€</p>
+                                <!--<a href="https://www.nukebot.org" target="_blank" class="btn w-48 bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 rounded-xl text-center mx-auto">-->
+                                <a href="https://www.nukebot.org" target="_blank" class="flex justify-center btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 rounded-lg">
+                                    Buy now
+                                </a>
+                            </div>
+                            <div class="card mx-auto bg-gray-800 rounded-xl border-4 border-gray-600 max-w-sm">
+                                <img src="img/nukebot.png" alt="premium" class="w-50 rounded-lg">
+                                <p class="text-white text-center font-bold text-3xl sm:text-3xl dark:text-white pt-4">1 month Premium</p>
+                                <p class="text-white text-center font-bold text-2xl sm:text-2xl dark:text-white pb-2">3€</p>
+                                <a href="https://www.nukebot.org" target="_blank" class="flex justify-center btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 rounded-lg">
+                                    Buy now
+                                </a>
+                            </div>
+                            <div class="card mx-auto bg-gray-800 rounded-xl border-4 border-gray-600 max-w-sm">
+                                <img src="img/nukebot.png" alt="premium" class="w-50 rounded-lg">
+                                <p class="text-white text-center font-bold text-3xl sm:text-3xl dark:text-white pt-4">Lifetime Premium</p>
+                                <p class="text-white text-center font-bold text-2xl sm:text-2xl dark:text-white pb-2">5€</p>
+                                <a href="https://www.nukebot.org" target="_blank" class="flex justify-center btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 rounded-lg">
+                                    Buy now
+                                </a>
+                            </div>
+                </div>
+            </section>
 
         </main>
     </div>
-    
+
 </body>
 </html>
