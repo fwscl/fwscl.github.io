@@ -16,13 +16,6 @@
                         <img src="img/nukebot.png" alt="header-logo" class="w-10">
                         <h1 class="mr-6 text-white font-bold text-2xl sm:text-2xl dark:text-white">NukeBot Shop</h1>
                 </div>
-                <!--
-                    <div>
-                    <a href="/" class="mr-6 btn bg-yellow-500 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded">
-                        NukeBot Shop
-                    </a>
-                </div>
-                -->
                 <div></div>
                 <div></div>
                 <div class="hidden md:flex items-center space-x-1">
@@ -38,7 +31,7 @@
                             </a>
                     </ul>
                 </div>
-                <div class="md:hidden flex items-center">
+                <div class="md:hidden flex flex-col">
                     <button class="outline-none mobile-menu-button">
                         <svg
                             class="w-6 h-6 text-gray-500"
@@ -56,6 +49,24 @@
                 </div>
                 <div></div>
             </nav>
+            <nav class="hidden flex flex-col gap-3 mobile-menu text-center mx-3 py-4">
+                    <a href="#" class="hover:text-indigo-300 text-white font-bold py-2 px-4">
+                        Home
+                    </a>
+                        <a href="https://www.nukebot.org" target="_blank" class="btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 px-4 rounded">
+                            NukeBot Website
+                        </a>
+                        <a href="https://invite.nukebot.org" target="_blank" class="btn bg-indigo-400 hover:bg-indigo-300 text-white font-bold py-2 px-4 rounded">
+                            <span>Invite</span>
+                        </a>
+            </nav>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+                btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+                });
+            </script>
         </div><!--end navbar-->
 
         <main class="bg-gray-800">
