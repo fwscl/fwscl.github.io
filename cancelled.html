@@ -26,17 +26,24 @@
    </style>
    <body>
       <div class="flex flex-col h-screen justify-between">
-          <header class="h-auto bg-black py-2.5">
-              <div class="mx-auto max-w-screen-lg flex flex-col items-center justify-between px-4 sm:px-6 sm:flex-row md:px-8 xl:px-0">
-                  <img src="img/logo.png" alt="logo" class="w-12 h-12">
-                  <nav class="flex items-center mt-2 text-sm gap-4 text-gray-200 sm:text-base sm:mt-0 sm:flex-row">
-                     <a href="/" class="hover:text-nuke-orange">Home</a>
-                     <a href="https://ww.nukebot.org/commands" class="hover:text-nuke-orange">Commands</a>
-                     <a href="https://shop.nukebot.org" class="hover:text-nuke-orange">Premium</a>
-                     <a href="https://www.nukebot.org/support" class="hover:text-nuke-orange">Support</a>
-                  </nav>
-               </div>
-          </header>
+         <header class="h-auto bg-black py-2.5">
+            <div class="mx-auto max-w-screen-lg flex flex-col items-center justify-between px-4 sm:px-6 sm:flex-row md:px-8 xl:px-0">
+                <div class="flex flex-col items-center justify-content: space-x-4 px-4 sm:px-6 sm:flex-row md:px-8 xl:px-0">
+                   <div>
+                      <img src="img/logo.png" alt="logo" class="w-12 h-12">
+                   </div>
+                   <div>
+                      <p class="text-3xl font-bold text-gray-100">NukeBot</p>
+                   </div>
+                </div>
+                <nav class="flex items-center mt-2 text-sm gap-4 text-gray-200 sm:text-base sm:mt-0 sm:flex-row">
+                   <a href="https://www.nukebot.org/index.html" class="hover:text-nuke-orange">Home</a>
+                   <a href="https://www.nukebot.org/commands.html" class="hover:text-nuke-orange">Commands</a>
+                   <a href="https://shop.nukebot.org" class="hover:text-nuke-orange">Premium</a>
+                   <a href="https://www.nukebot.org/support.html" class="hover:text-nuke-orange">Support</a>
+                </nav>
+             </div>
+        </header>
           <main class="mb-auto h-auto">
             <div id="success" class="py-64">
                 <div class="mx-auto max-w-screen-lg text-center px-4 sm:px-6 md:px-8 xl:px-0">
@@ -50,11 +57,17 @@
              </div>
           </main>
           <footer class="h-auto bg-black">
-              <div class="mx-auto max-w-screen-lg py-5 flex text-center flex-col justify-between text-gray-200 px-4 sm:px-6 sm:flex-row md:px-8 xl:px-0">
-                  <p>Copyright © 2022 NukeBot</p>
-                  <a href="https://www.nukebot.org/legal" class="hover:text-nuke-orange">Disclaimer & Privacy Policy & Contact</a>
-               </div>
-          </footer>
+            <div class="mx-auto max-w-screen-lg py-5 flex text-center flex-col justify-between text-gray-200 px-4 sm:px-6 sm:flex-row md:px-8 xl:px-0">
+                <p>Copyright © 2023 NukeBot</p>
+                <nav class="flex items-center mt-2 text-sm gap-4 text-gray-200 sm:text-base sm:mt-0 sm:flex-row">
+                   <a href="https://www.nukebot.org/legal.html" class="hover:text-nuke-orange">Legal Notice</a>
+                   <p>|</p>
+                   <a href="https://www.nukebot.org/tos.html" class="hover:text-nuke-orange">Bot TOS</a>
+                   <p>|</p>
+                   <a href="https://www.nukebot.org/privacy.html" class="hover:text-nuke-orange">Bot privacy policy</a>
+                </nav>
+             </div>
+        </footer>
       </div>
   </body>
 </html>
